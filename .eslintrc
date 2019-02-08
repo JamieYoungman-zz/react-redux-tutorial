@@ -9,6 +9,23 @@
                 "tabWidth": 4,
                 "singleQuote": true
             }
+        ],
+        "space-in-brackets": ["error", "always", {
+            "singleValue": true,
+            "objectsInArrays": true,
+            "arraysInArrays": true,
+            "arraysInObjects": true,
+            "objectsInObjects": true,
+            "propertyName": true
+          }
+        ],
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "never",
+            "imports": "never",
+            "exports": "never",
+            "functions": "ignore"
+            }
         ]
     }
   }
