@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Provider } from 'react-redux';
 
 import Posts from './components/Posts';
 import PostForm from './components/PostForm';
+import store from './store';
 
 const Container = styled.div`
 	margin: 0 auto;
@@ -13,11 +15,13 @@ const Container = styled.div`
 class App extends React.Component {
 	render() {
 		return (
-			<Container>
-				<PostForm />
-				<br />
-				<Posts />
-			</Container>
+			<Provider store={store}>
+				<Container>
+					<PostForm />
+					<br />
+					<Posts />
+				</Container>
+			</Provider>
 		);
 	}
 }

@@ -7,18 +7,12 @@
             {
                 "useTabs": true,
                 "tabWidth": 4,
-                "singleQuote": true
+                "singleQuote": true,
+                "object-curly-spacing": ["error", "always"],
+                "array-bracket-spacing": ["error", "always"],
+                "computed-property-spacing": ["error", "always"]
             }
-        ],
-        "space-in-brackets": ["error", "always", {
-            "singleValue": true,
-            "objectsInArrays": true,
-            "arraysInArrays": true,
-            "arraysInObjects": true,
-            "objectsInObjects": true,
-            "propertyName": true
-          }
-        ],
+        ],       
         "comma-dangle": ["error", {
             "arrays": "never",
             "objects": "never",
